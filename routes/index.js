@@ -5,14 +5,17 @@ const ArsipSchema = require("../model/arsipSchema");
 const jwt = require("jsonwebtoken");
 const multer = require("multer");
 const path = require("path");
+const fs = require("fs");
 const { SECRET, MAX_AGE } = require("../consts");
 const { requireLogin } = require("../middleware/authentication");
 
 const router = Router();
+const uploadsDir = path.join(__dirname, "..", "uploads");
+fs.mkdirSync(uploadsDir, { recursive: true });
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "uploads/");
+    cb(null, uploadsDir);
   },
   filename: (req, file, cb) => {
     const ext = path.extname(file.originalname);
