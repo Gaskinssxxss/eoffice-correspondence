@@ -12,7 +12,7 @@
     "axios": "^1.9.0",
     "core-js": "^3.8.3",
     "emailjs-com": "^3.2.0",
-    "fabric": "^4.6.0",
+    "fabric": "^7.4.0",
     "pdf-lib": "^1.17.1",
     "pdfvuer": "^2.0.1",
     "socket.io-client": "^4.8.1",
