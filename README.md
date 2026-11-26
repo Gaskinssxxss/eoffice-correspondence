@@ -1,6 +1,6 @@
 # eOffice Correspondence
 
-A MEVN application for handling internal correspondence. It brings letter intake, attachments, disposition, archiving, user management, and staff chat into one interface.
+Developed during a project-based internship at a regional government institution in Indonesia. This MEVN application brings letter intake, attachments, disposition, archiving, user management, and staff chat into one interface.
 
 ## What it does
 
